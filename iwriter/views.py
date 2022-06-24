@@ -22,7 +22,7 @@ trialRequests = 0
 class CreateCheckoutSessionView(View):
     global tempUserHolder
     def post(self, request, *args, **kwargs):
-        YOUR_DOMAIN = 'http://127.0.0.1:8000'
+        YOUR_DOMAIN = 'https://i-writer.herokuapp.com/'
         checkout_session = stripe.checkout.Session.create(
 
             line_items=[
