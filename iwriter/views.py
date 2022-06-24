@@ -33,8 +33,8 @@ class CreateCheckoutSessionView(View):
                 },
             ],
             mode='payment',
-            success_url=YOUR_DOMAIN + '/success/',
-            cancel_url=YOUR_DOMAIN + '/cancel/',
+            success_url=YOUR_DOMAIN + 'success/',
+            cancel_url=YOUR_DOMAIN + 'cancel/',
         )
         print('button pressed')
         tempUserHolder = request.user
