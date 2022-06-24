@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(41, 41, 40);
+    /* background: #37383f; */
+    color: whitesmoke;
+    font-size: 16px;
+    /* width: 100%; */
+    overflow: auto;
+}
+.navbar-brand {
+    color: whitesmoke;
+    font-size: 28px;
+    font-weight: 900;
+}
+.navbar-brand:hover {
+    color: whitesmoke;
+}
+body a, .nav-item a:not(.navbar-brand) {
+    color: rgb(197, 197, 197);
+}
+body a:hover, .nav-item a:hover {
+    color: whitesmoke;
+}
+.navbar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.nav-item {
+    margin-top: 6px;
+}
+
+.authentication a {
+    text-decoration: none;
+    margin-inline: 10px;
+}
+
+.authentication {
+    width: 75%;
+}
+
+.fa-solid {
+    margin-top: 5px;
+}
+
+
+/* .text-generator {
+    text-align: center;
+    margin-top: 10%;
+}
+/* .text-generator form {
+    /* width: 100%; */
+    /* width: 600px;
+    margin: auto; */
+    /* border: 1px solid  white; 
+} 
+.text-generator form input {
+    /* width: 100%; 
+    height: 41px;
+    background-color: rgb(53,53,53);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.text-generator form button {
+    height: 37px;
+    margin-top: -4px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+*/
+
+.section {
+    margin-top: 7%;
+}
+
+.generated-text {
+     /* border: 1px solid white;  */
+    margin-top: 20px;
+}
+
+.generated-text .text-container {
+    text-align: start;
+    padding: 15px;
+    /* width: 600px; */
+    width: 35%;
+    margin: auto;
+    background-color: rgb(53, 53, 53);
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .generated-text .text-container {
+        width: 50%;
+    }
+  }
+@media only screen and (max-width: 992px) {
+    .generated-text .text-container {
+        width: 70%;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .generated-text .text-container {
+        width: 90%;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .generated-text .text-container {
+        width: 100%;
+    }
+  }
+
+.text-generator {
+    text-align: center;
+}
+
+.text-generator button {
+    background: #3e5b8a;
+    outline: none;
+    border: none;
+}
+.text-generator button:hover {
+    background: #37568a;
+    outline: none;
+    border: none;
+}
+
+.action input {
+    background: rgb(53,53,53);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-size: 18px;
+    height: 41px;
+}
+
+.text-generator form button {
+    height: 37px;
+    margin-top: -4px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.navbar-toggler:focus {
+   outline: none;
+   border: none;
+   box-shadow: none;
+}
+
+.navbar-toggler-icon  {
+    /* background-color: whitesmoke; */
+    color: white;
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .action input {
+        width: 100%;
+    }
+    .text-generator form button {
+        margin-top: 5px;
+    }
+  } 
+
+  @media only screen and (min-width: 992px) {
+    
+    .authentication .wrapper {
+        float: right;
+    }
+  } 
+
+.text-container button {
+    background: #3e5b8a;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.text-container button:hover {
+    background: #37568a;
+    outline: none;
+    border: none;
+}
+.text-container button:focus {
+    background-color: #37568a;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+  
+
+/* .registerForm {
+    text-align: center;
+     background-color: aquamarine; 
+    margin-top: 10%;
+    padding: 10px;
+    width: 100%;
+}
+
+.formContainer {
+    background-color: rgb(75, 74, 74); 
+    background-color: rgb(53, 53, 53);
+    width: 20%;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 7px;
+    height: 340px;
+}
+.formContainer h4 {
+    margin-bottom: 6%;
+    text-align: start;
+}
+.formContainer input {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    color: whitesmoke;
+}
+.formContainer input:focus {
+    background-color: rgb(39, 38, 38);
+}
+.formContainer .btn {
+    float: right;
+    background-color: rgb(87, 64, 150); 
+} */
+
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgb(39, 38, 38) inset ;
+  -webkit-text-fill-color: whitesmoke !important;
+}
+
+.registerForm {
+    /* border: 1px solid white; */
+    padding: 5px;
+}
+
+.registerForm .formContainer input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px rgb(39, 38, 38) inset ;
+  -webkit-text-fill-color: whitesmoke !important; 
+}
+
+.loginForm{
+    padding: 5px;
+}
+
+.formContainer {
+    width: 20%;
+    margin: auto;
+    background-color: rgb(53,53,53);
+    padding: 20px 20px;
+}
+
+.formContainer .btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.formContainer .btn-container .text-muted {
+    width: 50%;
+    float: right;
+}
+
+.formContainer .btn-container .btn-wrapper {
+    width: 50%;
+    justify-content: end;
+    display: flex;
+}
+
+.registerForm .formContainer input {
+    margin-bottom: -2%;
+    border-radius: 0 !important;
+    outline: none;
+    box-shadow: none;
+    color: whitesmoke;
+}
+
+.formContainer h4 {
+    margin-bottom: 6%;
+    text-align: start;
+}
+.formContainer input {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    color: whitesmoke;
+    height: 40px;
+    padding: 5px;
+
+}
+.formContainer input:focus {
+    background-color: rgb(39, 38, 38);
+}
+
+.formContainer .btn-container .btn {
+    background: #3e5b8a;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1980px) {
+    .formContainer {
+        width: 40%;
+    }
+    .formContainer .btn-container .text-muted {
+        width: 50%;
+        float: right;
+    }
+    
+    .formContainer .btn-container .btn-wrapper {
+        width: 50%;
+        justify-content: end;
+        display: flex;
+    }
+  }
+
+
+
+@media only screen and (max-width: 1200px) {
+    .formContainer {
+        width: 50%;
+    }
+    .formContainer .btn-container .text-muted {
+        width: 50%;
+        float: right;
+    }
+    
+    .formContainer .btn-container .btn-wrapper {
+        width: 50%;
+        justify-content: end;
+        display: flex;
+    }
+  }
+ @media only screen and (max-width: 992px) {
+    .formContainer {
+        width: 70%;
+    }
+    .formContainer .btn-container .text-muted {
+        width: 50%;
+        text-align: start;
+    }
+    
+    .formContainer .btn-container .btn-wrapper {
+        width: 50%;
+        justify-content: end;
+        display: flex;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .formContainer {
+        width: 90%;
+    }
+    
+  }
+@media only screen and (max-width: 600px) {
+    .formContainer {
+        width: 100%;
+    }
+    .formContainer .btn-container {
+        display: block;
+    }
+    .formContainer .btn-container .text-muted {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .formContainer .btn-container .btn-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .formContainer .btn-container .btn-wrapper .btn {
+        width: 100%;
+        text-align: center;
+    }
+  } 
+
+ .loginForm .formContainer input {
+    width: 100%;
+    margin-bottom: 1%;
+    border-radius: 0;
+    outline: none;
+}
+
+.registerForm .formContainer .btn-container .btn {
+    margin-top: 3.5%;
+}
+
+.loginForm .formContainer .btn-container .btn {
+    margin-top: 3%;
+}
+
+.registerForm, .loginForm {
+    margin-top: 13%;
+}
+
+.footer {
+    /* background-color: blue; */
+    position: absolute;
+    /* border: 1px solid red; */
+    bottom: 20px;
+    left:   0;
+    right: 0;
+   margin: auto;
+}
+
+.footer footer {
+    text-align: center;
+}
+
+.logout {
+    justify-content: center;
+    display: flex;
+    height: 40vh;
+    margin-top: 7%;
+}
+.logout-container {
+    background-color: rgb(53,53,53);
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+.logout-container .btn {
+    float: right;
+    background: #3e5b8a;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
