@@ -37,7 +37,6 @@ class CreateCheckoutSessionView(View):
             cancel_url=YOUR_DOMAIN + '/cancel/',
         )
         print('button pressed')
-        userSubscriptions.objects.create(user=request.user)
         tempUserHolder = request.user
         return redirect(checkout_session.url, code=303)
 
@@ -132,6 +131,7 @@ def stripe_webhook(request):
     if event['type'] == 'checkout.session.completed':
         session = event['data']['object']
 
+        userSubscriptions.objects.create(user=tempUserHolder)
         currentUser = userSubscriptions.objects.get(user=tempUserHolder)
         currentUser.subStatus = True 
         currentUser.save()
