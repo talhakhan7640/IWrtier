@@ -121,10 +121,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = (BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+import os
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -142,4 +144,6 @@ STRIPE_WEBHOOK_SECRET = 'whsec_ef3f6808ec4b78b76ff636cb594e7463444df846a848ea4a2
 
 import django_heroku
 import dj_database_url
-from decouple import config
+
+
+django_heroku.settings(locals())
