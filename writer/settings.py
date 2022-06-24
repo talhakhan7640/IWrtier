@@ -140,7 +140,6 @@ STRIPE_PUBLIC_KEY = 'pk_live_51KwWbISEVlRAykiPd4mEVuVtyUQ3KjPzzkuRxevfTsuz3HNRqQ
 STRIPE_SECRET_KEY = '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'
 STRIPE_WEBHOOK_SECRET = 'whsec_ef3f6808ec4b78b76ff636cb594e7463444df846a848ea4a2533c413ebeedfd5'
 
-
-
-
-'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'
+import django_heroku
+import dj_database_url
+from decouple import config
